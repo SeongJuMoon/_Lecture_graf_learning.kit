@@ -16,7 +16,7 @@ echo 'alias h=helm' >> ~/.bashrc
 echo 'complete -F __start_helm h' >> ~/.bashrc 
 
 # metallb v0.13.3
-kubectl apply -f $SCRIPTSDIR/metallb-native-v0.13.3.yaml
+kubectl apply -f $SCRIPTSDIR/metallb-native-v0.13.7.yaml
 
 # split metallb CRD due to it cannot apply at once. 
 # it looks like Operator limitation
