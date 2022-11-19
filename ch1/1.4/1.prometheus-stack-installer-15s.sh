@@ -12,6 +12,7 @@ helm install prometheus-stack edu/kube-prometheus-stack  \
 --set grafana.service.type="LoadBalancer" \
 --set grafana.persistence.enabled="true" \
 --set grafana.defaultDashboardsEnabled="false" \
+--set grafana.sidecar.datasources.enabled="false" \
 --namespace=monitoring \
 --create-namespace \
 -f ~/_Lecture_graf_learning.kit/ch1/1.4/prom-operator-config/prom-operator-config-merged.yaml
