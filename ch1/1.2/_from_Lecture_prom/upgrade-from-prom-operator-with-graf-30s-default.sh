@@ -11,5 +11,4 @@ helm upgrade prometheus-stack edu/kube-prometheus-stack \
 --set grafana.persistence.enabled="true" \
 --set grafana.defaultDashboardsEnabled="false" \
 --namespace=monitoring \
---create-namespace \
--f ~/_Lecture_graf_learning.kit/ch1/1.2/prom-operator-config/prom-operator-config-merged.yaml
+-f ~/_Lecture_graf_learning.kit/ch1/1.2/_from_Lecture_prom/prom-operator-config-merged.yaml
