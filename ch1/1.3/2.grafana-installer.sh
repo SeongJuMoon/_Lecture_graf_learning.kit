@@ -5,4 +5,7 @@ helm install grafana edu/grafana \
 --set service.type="LoadBalancer" \
 --set persistence.enabled="true" \
 --set adminPassword="admin" \
+--set securityContext.runAsUser=65534 \
+--set securityContext.runAsGroup=65534 \
+--set securityContext.fsGroup=65534 \
 --namespace monitoring
