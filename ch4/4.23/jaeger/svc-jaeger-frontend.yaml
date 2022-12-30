@@ -7,4 +7,7 @@ spec:
     app: jaeger
   ports:
   - port: 16686
+    protocol: "TCP"
     targetPort: 16686
+    type: LoadBalancer
+    loadBalancerIP: 192.168.1.13

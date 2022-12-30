@@ -11,4 +11,5 @@ spec:
     app: jaeger
   ports:
   - port: 6831
+    protocol: "UDP"
     targetPort: 6831
