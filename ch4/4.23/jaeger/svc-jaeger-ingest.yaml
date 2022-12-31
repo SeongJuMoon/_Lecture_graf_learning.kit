@@ -6,6 +6,7 @@ metadata:
   # https://github.com/jaegertracing/jaeger/issues/1986
   # https://github.com/jaegertracing/jaeger-operator/issues/1158
   name: jaeger-ingest
+  namespace: monitoring
 spec:
   selector:
     app: jaeger

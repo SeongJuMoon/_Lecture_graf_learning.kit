@@ -4,6 +4,7 @@ metadata:
   labels:
     app: jaeger
   name: jaeger
+  namespace: monitoring
 spec:
   replicas: 1
   selector:
