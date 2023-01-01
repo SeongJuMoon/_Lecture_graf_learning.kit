@@ -12,6 +12,9 @@ helm install prometheus-stack edu/kube-prometheus-stack \
 --set grafana.persistence.enabled="true" \
 --set grafana.defaultDashboardsEnabled="false" \
 --set grafana.sidecar.datasources.enabled="false" \
+--set grafana."grafana\.ini"."auth\.anonymous".enabled="true" \
+--set grafana."grafana\.ini"."auth\.anonymous".org_name="Main Org." \
+--set grafana."grafana\.ini"."auth\.anonymous".org_role="Admin" \
 --namespace=monitoring \
 --create-namespace \
 -f ~/_Lecture_graf_learning.kit/ch6/6.2/prom-operator-config/prom-operator-config-merged.yaml
