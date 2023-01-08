@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
-# scrape default is 30s for kube-prometheus-stack
 
-helm install prometheus-stack edu/kube-prometheus-stack \
+helm install prometheus-stack edu/kube-prometheus-stack  \
 --set defaultRules.create="true" \
+--set alertmanager.enabled="false" \
 --set prometheus.service.type="LoadBalancer" \
 --set server.service.loadBalancerIP="192.168.1.11" \
 --set prometheus.service.port="80" \
+--set prometheus.prometheusSpec.scrapeInterval="15s" \
+--set prometheus.prometheusSpec.evaluationInterval="15s" \
 --set grafana.adminPassword="admin" \
 --set grafana.image.tag="9.2.4" \
 --set grafana.service.type="LoadBalancer" \

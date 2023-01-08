@@ -2,6 +2,7 @@
 
 helm install prometheus-stack edu/kube-prometheus-stack  \
 --set defaultRules.create="true" \
+--set alertmanager.enabled="false" \
 --set prometheus.service.type="LoadBalancer" \
 --set server.service.loadBalancerIP="192.168.1.11" \
 --set prometheus.service.port="80" \
