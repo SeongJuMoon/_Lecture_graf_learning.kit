@@ -3,8 +3,7 @@ k create configmap db-hostinfo --from-file host-info.conf
 configmap/db-hostinfo created
 
 # check configmap resource 
-
-[root@m-k8s ch4]# k get cm db-connection-info -o yaml
+k get cm db-connection-info -o yaml
 apiVersion: v1
 data:
   host-info.conf: |
