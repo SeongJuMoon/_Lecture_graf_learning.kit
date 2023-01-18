@@ -10,3 +10,4 @@ helm install grafana edu/grafana \
 --set securityContext.runAsGroup=65534 \
 --set securityContext.fsGroup=65534 \
 --namespace monitoring
+

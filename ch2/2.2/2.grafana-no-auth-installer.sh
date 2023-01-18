@@ -13,3 +13,4 @@ helm install grafana edu/grafana \
 --set "grafana\.ini"."auth\.anonymous".org_name="Main Org." \
 --set "grafana\.ini"."auth\.anonymous".org_role="Admin" \
 --namespace monitoring
+
