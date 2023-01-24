@@ -14,6 +14,7 @@ helm install prometheus-stack edu/kube-prometheus-stack \
 --set grafana.service.loadBalancerIP="192.168.1.12" \
 --set grafana.persistence.enabled="true" \
 --set grafana."grafana\.ini".server.domain="192.168.1.12" \
+--set grafana."grafana\.ini".server.root_url="http://192.168.1.12" \
 --namespace=monitoring \
 --create-namespace \
 -f ~/_Lecture_graf_learning.kit/ch9/9.2/prom-operator-config/prom-operator-config-merged.yaml

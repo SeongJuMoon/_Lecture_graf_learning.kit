@@ -16,7 +16,7 @@ helm install prometheus-stack edu/kube-prometheus-stack \
 --set grafana."grafana\.ini"."auth\.anonymous".enabled="true" \
 --set grafana."grafana\.ini"."auth\.anonymous".org_name="Main Org." \
 --set grafana."grafana\.ini"."auth\.anonymous".org_role="Admin" \
---set grafana."grafana\.ini".server.domain="192.168.1.12" \
+--set grafana."grafana\.ini".server.root_url="http://192.168.1.12" \
 --namespace=monitoring \
 --create-namespace \
 -f ~/_Lecture_graf_learning.kit/ch9/9.2/prom-operator-config/prom-operator-config-merged.yaml
