@@ -8,8 +8,8 @@ spec:
   selector:
     app: unschedulable
   ports:
-    - port: 3000
-      targetPort: 3000
+    - port: 80
+      targetPort: 80
 ---
 apiVersion: apps/v1
 kind: Deployment
