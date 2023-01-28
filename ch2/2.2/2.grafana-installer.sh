@@ -9,5 +9,7 @@ helm install grafana edu/grafana \
 --set securityContext.runAsUser=65534 \
 --set securityContext.runAsGroup=65534 \
 --set securityContext.fsGroup=65534 \
+--set grafana."grafana\.ini".server.domain="192.168.1.12" \
+--set grafana."grafana\.ini".server.root_url="http://192.168.1.12" \
 --namespace monitoring
 
