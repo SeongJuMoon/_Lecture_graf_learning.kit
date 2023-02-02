@@ -5,7 +5,7 @@
 # max number of worker nodes
 N = 3 
 # each of components to install 
-k8s_V = '1.26.0'           # Kubernetes 
+k8s_V = '1.25.6'           # Kubernetes 
 docker_V = '20.10.21-3.el7' # Docker  
 ctrd_V = '1.6.10-3.1.el7'   # Containerd 
 ## /configuration variables ##

@@ -15,7 +15,7 @@ helm completion bash > /etc/bash_completion.d/helm
 echo 'alias h=helm' >> ~/.bashrc
 echo 'complete -F __start_helm h' >> ~/.bashrc 
 
-# metallb v0.13.3
+# metallb v0.13.7
 kubectl apply -f $SCRIPTSDIR/metallb-native-v0.13.7.yaml
 
 # split metallb CRD due to it cannot apply at once. 
