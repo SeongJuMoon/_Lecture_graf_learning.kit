@@ -19,4 +19,4 @@ helm install prometheus-stack edu/kube-prometheus-stack \
 --set grafana."grafana\.ini".server.root_url="http://192.168.1.12" \
 --namespace=monitoring \
 --create-namespace \
--f ~/_Lecture_graf_learning.kit/ch9/9.5/prom-operator-config/prom-operator-config-merged.yaml
+-f ~/_Lecture_graf_learning.kit/ch9/9.6/prom-operator-config/prom-operator-config-merged.yaml
