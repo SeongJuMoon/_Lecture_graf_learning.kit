@@ -1,0 +1,27 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  annotations:
+    meta.helm.sh/release-name: prometheus-stack
+    meta.helm.sh/release-namespace: monitoring
+  labels:
+    app: prometheus-node-exporter
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-node-exporter-3.3.1
+    heritage: Helm
+    jobLabel: node-exporter
+    release: prometheus-stack
+  name: prometheus-stack-prometheus-node-exporter
+  namespace: monitoring
+spec:
+  endpoints:
+  - port: http-metrics
+    scheme: http
+    relabelings:
+    - sourceLabels: [__meta_kubernetes_pod_node_name]
+      targetLabel: node
+  jobLabel: jobLabel
+  selector:
+    matchLabels:
+      app: prometheus-node-exporter
+      release: prometheus-stack
