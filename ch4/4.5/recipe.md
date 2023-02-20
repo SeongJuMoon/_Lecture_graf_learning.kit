@@ -1,10 +1,12 @@
-# 패널 그리는 방법
+## 패널 그리는 방법
 
+**[대시보드 설정]**
+* 이름: ch4.[Stable] 그라파나에서 자주 사용되는 패널
 
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Gauge
-* 패널 제목: 5분 간 CPU 사용률 (1m)
+* 패널 제목: 노드 별 1분 간 CPU의 평균 사용률  
 
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
-* 쿼리:  1 - (avg by (node) 	(rate(node_cpu_seconds_total{mode="idle"}[1m])))
+* 쿼리:  1 - (avg by (node)(rate(node_cpu_seconds_total{mode="idle"}[1m])))
