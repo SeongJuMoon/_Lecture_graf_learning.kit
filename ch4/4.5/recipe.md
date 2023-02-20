@@ -9,4 +9,4 @@
 
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
-* 쿼리:  1 - (avg by (node)(rate(node_cpu_seconds_total{mode="idle"}[1m])))
+* 쿼리:  1 - (avg(rate(node_cpu_seconds_total{mode="idle"}[1m])) by (node))
