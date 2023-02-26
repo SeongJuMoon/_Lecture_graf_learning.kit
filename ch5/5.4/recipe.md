@@ -8,8 +8,8 @@
 * 패널 제목: important-front의 파드 수 
 * 값을 대응하도록 추가(Add value mapping)
   - Add a new mapping 
-    - Special 
-      - 값이 null이거나 숫자가 아닌 경우 (NaN)
+    - Value
+      - 0
       - 파드가 없음 
       - 색은 빨간 색 동그라미 
 
