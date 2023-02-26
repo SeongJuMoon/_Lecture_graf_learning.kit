@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: important-front
+  name: important-front
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: important-front
+  template:
+    metadata:
+      labels:
+        app: important-front
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
