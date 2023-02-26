@@ -1,2 +1,2 @@
 # from w3-k8s 
-sudo stress --cpu  14 --timeout 60
+stress --cpu 1 --timeout 60s
