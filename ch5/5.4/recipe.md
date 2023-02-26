@@ -13,6 +13,9 @@
       - 파드가 없음 
       - 색은 빨간 색 동그라미 
 
+**[상단 메뉴 / 대시보드 보기 설정]**
+* 확인 범위: Last 5 minutes 
+
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: kube_deployment_spec_replicas{deployment="important-front"}
