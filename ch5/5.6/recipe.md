@@ -16,6 +16,9 @@
   - 빨간 동그라미 - 85%로 변경 
   - Add thresholds: 노란 동그라미 - 65%로 변경 
 
+**[상단 메뉴 / 대시보드 보기 설정]**
+* 확인 범위: Last 5 minutes 
+
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: (node_memory_MemTotal_bytes - node_memory_MemFree_bytes - node_memory_Buffers_bytes - node_memory_Cached_bytes - node_memory_SReclaimable_bytes) / node_memory_MemTotal_bytes
