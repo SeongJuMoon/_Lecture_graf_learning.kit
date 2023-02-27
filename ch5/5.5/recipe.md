@@ -3,6 +3,10 @@
 **[대시보드 설정]**
 * 이름: ch5.[Stable] 그라파나 패널에서 제공되는 다양한 옵션들
 
+**[좌측 메뉴/ 쿼리 편집기]** 
+* 데이터 소스: 프로메테우스
+* 쿼리:  1 - (avg(rate(node_cpu_seconds_total{mode="idle"}[1m])) by (node))
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Gauge
 * 패널 제목: 노드 별 1분 간 CPU의 평균 사용률  
@@ -18,6 +22,3 @@
 **[상단 메뉴 / 대시보드 보기 설정]**
 * 확인 범위: Last 5 minutes 
 
-**[좌측 메뉴/ 쿼리 편집기]** 
-* 데이터 소스: 프로메테우스
-* 쿼리:  1 - (avg(rate(node_cpu_seconds_total{mode="idle"}[1m])) by (node))
