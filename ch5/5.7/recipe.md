@@ -9,7 +9,7 @@
 * 쿼리 옵션:
   - Legend: Auto (no change)
   - Format: Table
-  - Type: Range (no change)
+  - Type: Instant
 
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Table
