@@ -455,7 +455,7 @@
           "refId": "A"
         }
       ],
-      "title": "default 네임스페이스 디플로이먼트 상태",
+      "title": "default 네임스페이스의 디플로이먼트 상태",
       "type": "state-timeline"
     },
     {
@@ -540,6 +540,6 @@
   "timezone": "",
   "title": "ch6.[Stable] 구체적인 목적을 가지고 사용되는 패널 (optional)",
   "uid": "5KhsiKTVz",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }
