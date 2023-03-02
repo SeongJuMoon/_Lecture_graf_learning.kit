@@ -13,3 +13,6 @@
 * 파이 차트(Pie chart)
   - Labels: Percent
 
+**[상단 메뉴 / 대시보드 보기 설정]**
+* 확인 범위: Last 5 minutes 
+
