@@ -10,8 +10,8 @@
     Legends: {{ deployment }}
 
 **[우측 메뉴 / 패널 옵션]**
-* 시각화: Status history 
-* 패널 제목: default 네임스페이스 디플로이먼트 상태
+* 시각화: Status timeline
+* 패널 제목: default 네임스페이스의 디플로이먼트 상태
 * 파이 차트(Pie chart)
   - Labels: Percent
 
