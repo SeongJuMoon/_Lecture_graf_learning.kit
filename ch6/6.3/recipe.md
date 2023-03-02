@@ -15,7 +15,7 @@
 * 스테이트 타임라인(State timeline)
   - Align values: Center 
 * 임계치(Thresholds)
-  - 빨간 동그라미 - 1로 변경하고, 노란 동그라미로 변경 
+  - 빨간 동그라미 - 3으로 그리고 녹색 동그라미로 변경 
   - 녹색 동그라미 - 빨간 동그라미로 변경 
-  - Add thresholds: 녹색 동그라미 - 3으로 변경 
+  - Add thresholds: 노란 동그라미 - 1로 변경 
 
