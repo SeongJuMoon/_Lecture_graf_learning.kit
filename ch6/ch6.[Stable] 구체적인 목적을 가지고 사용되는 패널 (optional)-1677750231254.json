@@ -63,6 +63,12 @@
     },
     {
       "type": "panel",
+      "id": "state-timeline",
+      "name": "State timeline",
+      "version": ""
+    },
+    {
+      "type": "panel",
       "id": "status-history",
       "name": "Status history",
       "version": ""
@@ -390,7 +396,8 @@
           },
           "custom": {
             "fillOpacity": 70,
-            "lineWidth": 1
+            "lineWidth": 0,
+            "spanNulls": false
           },
           "mappings": [],
           "thresholds": {
@@ -401,8 +408,12 @@
                 "value": null
               },
               {
-                "color": "green",
+                "color": "#EAB839",
                 "value": 1
+              },
+              {
+                "color": "#73BF69",
+                "value": 3
               }
             ]
           }
@@ -417,12 +428,13 @@
       },
       "id": 4,
       "options": {
-        "colWidth": 0.9,
+        "alignValue": "center",
         "legend": {
           "displayMode": "list",
           "placement": "bottom",
           "showLegend": true
         },
+        "mergeValues": true,
         "rowHeight": 0.9,
         "showValue": "auto",
         "tooltip": {
@@ -444,7 +456,7 @@
         }
       ],
       "title": "default 네임스페이스 디플로이먼트 상태",
-      "type": "status-history"
+      "type": "state-timeline"
     },
     {
       "datasource": {
