@@ -207,7 +207,7 @@
           "refId": "A"
         }
       ],
-      "title": " p95에 해당하는 etcd 조회 요청 응답 시간",
+      "title": " p95에 해당하는 etcd 조회 요청에 대한 응답 시간",
       "type": "histogram"
     },
     {
@@ -298,7 +298,7 @@
           "refId": "A"
         }
       ],
-      "title": "프로메테우스 수집 결과",
+      "title": "프로메테우스 타켓에 대한 메트릭 수집 결과",
       "type": "status-history"
     },
     {
@@ -381,7 +381,7 @@
           "refId": "A"
         }
       ],
-      "title": "apiserver 요청 응답 시간",
+      "title": "apiserver 요청에 대한 응답 시간",
       "type": "heatmap"
     },
     {
@@ -540,6 +540,6 @@
   "timezone": "",
   "title": "ch6.[Stable] 구체적인 목적을 가지고 사용되는 패널 (optional)",
   "uid": "5KhsiKTVz",
-  "version": 3,
+  "version": 4,
   "weekStart": ""
 }
