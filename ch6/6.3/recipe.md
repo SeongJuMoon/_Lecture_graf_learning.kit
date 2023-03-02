@@ -12,6 +12,10 @@
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Status timeline
 * 패널 제목: default 네임스페이스의 디플로이먼트 상태
-* 파이 차트(Pie chart)
-  - Labels: Percent
+* 스테이트 타임라인(State timeline)
+  - Align values: Center 
+* 임계치(Thresholds)
+  - 빨간 동그라미 - 1로 변경하고, 노란 동그라미로 변경 
+  - 녹색 동그라미 - 빨간 동그라미로 변경 
+  - Add thresholds: 녹색 동그라미 - 3으로 변경 
 
