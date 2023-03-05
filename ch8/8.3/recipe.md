@@ -15,7 +15,7 @@
 * Background
  - Image:
    - Fixed 
-   - https://github.com/SeongJuMoon/
+   - https://github.com/SeongJuMoon/_Lecture_graf_learning.kit/blob/main/ch8/8.3/background.png?raw=true
 
 * 값을 대응하도록 추가(Add value mapping)
   - default 
