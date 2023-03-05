@@ -161,17 +161,26 @@
             },
             "lineWidth": 1
           },
-          "mappings": [],
+          "mappings": [
+            {
+              "options": {
+                "": {
+                  "index": 0
+                }
+              },
+              "type": "value"
+            }
+          ],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "#73BF69",
                 "value": null
               },
               {
                 "color": "red",
-                "value": 80
+                "value": 0.05
               }
             ]
           },
@@ -202,7 +211,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum(rate(apiserver_request_duration_seconds_bucket{verb=\"GET\"}[1m])) by (le))",
+          "expr": "histogram_quantile(0.95, rate(apiserver_request_duration_seconds_bucket{verb=\"GET\"}[1m]))",
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
