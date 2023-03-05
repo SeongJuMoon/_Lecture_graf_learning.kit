@@ -12,3 +12,10 @@
 * Scenario: CSV content 
  - 컨텐츠내용은 `AAPL.csv` 내용을 복사해서 붙여넣음  
  - `zoom to data` 작업 필요 
+
+**[우측 메뉴 / 패널 옵션]**
+* Up color: 빨간 동그라미 
+* Down color: 파란 동그라미
+* 범례(Legend): 끄기
+* Standard options
+  - Unit - Currency - Dollars ($)
