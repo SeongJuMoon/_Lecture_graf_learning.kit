@@ -126,15 +126,15 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "red",
+                "color": "#EAB839",
                 "value": 5
               },
               {
-                "color": "#EAB839",
+                "color": "green",
                 "value": 10
               }
             ]
@@ -219,7 +219,7 @@
           "id": "north-america",
           "lat": 40,
           "lon": -100,
-          "zoom": 4
+          "zoom": 5
         }
       },
       "pluginVersion": "9.2.4",
@@ -234,7 +234,7 @@
           "scenarioId": "csv_file"
         }
       ],
-      "title": "미국 내 공항 위치 정보",
+      "title": "미국 주 별 국제 공항의 정보",
       "type": "geomap"
     },
     {
@@ -306,15 +306,15 @@
         "candleStyle": "ohlcbars",
         "colorStrategy": "open-close",
         "colors": {
-          "down": "red",
-          "up": "green"
+          "down": "blue",
+          "up": "red"
         },
         "includeAllFields": false,
         "legend": {
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom",
-          "showLegend": true
+          "showLegend": false
         },
         "mode": "candles+volume"
       },
@@ -355,7 +355,7 @@
         "showTime": true,
         "showUser": true
       },
-      "title": "애너테이션 목록",
+      "title": "그라파나에 지정된 에너테이션 목록",
       "type": "annolist"
     },
     {
@@ -372,7 +372,7 @@
       "id": 4,
       "options": {
         "maxItems": 10,
-        "query": "실습",
+        "query": "Stable",
         "showHeadings": true,
         "showRecentlyViewed": true,
         "showSearch": true,
@@ -380,7 +380,7 @@
         "tags": []
       },
       "pluginVersion": "9.2.4",
-      "title": "실습 대시보드",
+      "title": "실습 대시보드 목록",
       "type": "dashlist"
     },
     {
@@ -412,7 +412,7 @@
         },
         "viewMode": "list"
       },
-      "title": "그라파나의 설정된 경보 리스트",
+      "title": "그라파나에 설정된 경보 목록",
       "type": "alertlist"
     },
     {
