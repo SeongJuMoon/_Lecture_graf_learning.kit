@@ -145,6 +145,7 @@
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
       },
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -201,13 +202,13 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum by(le) (rate(etcd_request_duration_seconds_bucket{operation=\"get\"}[5m])))",
+          "expr": "histogram_quantile(0.95, sum(rate(apiserver_request_duration_seconds_bucket{verb=\"GET\"}[1m])) by (le))",
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
         }
       ],
-      "title": " p95에 해당하는 etcd 조회 요청에 대한 응답 시간",
+      "title": "apiserver 요청에 대한 응답 시간 (95% 이하)",
       "type": "histogram"
     },
     {
@@ -306,6 +307,7 @@
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
       },
+      "description": "",
       "fieldConfig": {
         "defaults": {
           "custom": {
@@ -381,7 +383,7 @@
           "refId": "A"
         }
       ],
-      "title": "apiserver 요청에 대한 응답 시간",
+      "title": "apiserver 요청에 대한 응답 시간 (시간 흐름)",
       "type": "heatmap"
     },
     {
@@ -540,6 +542,6 @@
   "timezone": "",
   "title": "ch6.[Stable] 구체적인 목적을 가지고 사용되는 패널 (optional)",
   "uid": "5KhsiKTVz",
-  "version": 4,
+  "version": 5,
   "weekStart": ""
 }
