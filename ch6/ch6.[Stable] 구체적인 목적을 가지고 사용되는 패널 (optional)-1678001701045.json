@@ -251,7 +251,7 @@
                 "result": {
                   "color": "green",
                   "index": 0,
-                  "text": "수집"
+                  "text": "O"
                 },
                 "to": 100000
               },
@@ -286,7 +286,7 @@
         "legend": {
           "displayMode": "list",
           "placement": "bottom",
-          "showLegend": true
+          "showLegend": false
         },
         "rowHeight": 0.9,
         "showValue": "auto",
@@ -551,6 +551,6 @@
   "timezone": "",
   "title": "ch6.[Stable] 구체적인 목적을 가지고 사용되는 패널 (optional)",
   "uid": "5KhsiKTVz",
-  "version": 5,
+  "version": 2,
   "weekStart": ""
 }
