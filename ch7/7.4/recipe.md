@@ -5,7 +5,7 @@
 
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Dashboard list 
-* 패널 제목: 실습 대시보드 
+* 패널 제목: 실습 대시보드 목록 
 * 대시보드 리스트(Dashboard list)
  - Recently viewed: 켜기  
  - Search: 켜기 
