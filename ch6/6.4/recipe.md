@@ -9,7 +9,7 @@
 
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Heatmap 
-* 패널 제목: apiserver 요청에 대한 응답 시간
+* 패널 제목: apiserver 요청에 대한 응답 시간(시간 흐름)
 * Y Axis 
   - Unit - Time - seconds (s)
 
