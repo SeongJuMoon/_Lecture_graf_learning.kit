@@ -15,7 +15,6 @@
 **[우측 메뉴 / 패널 옵션]**
 * Map view:
   - View: North America 
-  - Zoom: 5 
   - Styles:
     - Size: Count (자동으로 2 - 15 적용)
   - Symbol: plane.svg 
