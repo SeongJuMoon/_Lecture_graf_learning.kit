@@ -9,10 +9,8 @@ echo "----------------------------------------------"
 
 echo "Start to deploy prometheus operator with scraping 15s interval"
 echo "=============================================================="
-sh ~/_Lecture_prom_learning.kit/ch8/8.2/prometheus-stack-installer-15s.sh
+sh ~/_Lecture_graf_learning.kit/ch9/9.6/1.prometheus-stack-installer-15s.sh
 echo "--------------------------------------------------------------"
-echo "Enable to srape control-plane componentes"
-sh ~/_Lecture_prom_learning.kit/ch8/8.3/1.scraping-control-plane-enabled.sh
+echo "Enable to scrape control-plane componentes"
+sh ~/_Lecture_graf_learning.kit/ch9/9.6/2.enabled-control-plane-scrape.sh
 echo "--------------------------------------------------------------"
-echo "Change etcd exposed port for insecure mode"
-sh ~/_Lecture_prom_learning.kit/ch8/8.3/2.prometheus-stack-upgrader-15s.sh
