@@ -250,7 +250,7 @@
           "service": "frontend"
         }
       ],
-      "title": "frontend 서비스 트레이스 목록",
+      "title": "frontend의 트레이스 목록",
       "type": "table"
     },
     {
@@ -396,7 +396,7 @@
           "refId": "A"
         }
       ],
-      "title": "클러스터 인그레스 상태",
+      "title": "Nginx 인그레스 컨트롤러의 상태",
       "type": "canvas"
     },
     {
