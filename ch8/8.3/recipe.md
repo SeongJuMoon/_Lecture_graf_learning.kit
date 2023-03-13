@@ -30,3 +30,5 @@
       - 정상 
       - 색은 녹색 동그라미 
 
+**[좌측 중앙 메뉴/ 필드 선택(Select field)]**
+* field: {__name__="kube_deployment_status_replicas_ready"....}
