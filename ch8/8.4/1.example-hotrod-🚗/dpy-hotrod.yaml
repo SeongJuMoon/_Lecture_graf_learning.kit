@@ -1,15 +1,9 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: example-hotrod
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: example-hotrod
   name: example-hotrod
-  namespace: example-hotrod
 spec:
   replicas: 1
   selector:
