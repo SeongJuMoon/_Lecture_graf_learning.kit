@@ -61,6 +61,7 @@
 * 시각화: Time Series
 * 패널 제목: $namespace active deployment count
 
+</br></br>
 
 #2-1 아코디언 메뉴 만들기
 * Title: $pod pod summary
