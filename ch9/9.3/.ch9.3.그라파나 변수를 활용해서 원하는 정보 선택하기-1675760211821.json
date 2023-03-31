@@ -472,7 +472,7 @@
           "refId": "A"
         }
       ],
-      "title": "$pod container used cpu (rated , 5m)",
+      "title": "$pod container cpu usage (rated , 5m)",
       "type": "timeseries"
     },
     {
