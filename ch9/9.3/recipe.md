@@ -108,7 +108,7 @@
 * 패널 제목: per $namespace $pod containers memory usage bytes
 * Standard Options
   - Unit
-    - data -> bytes(si)
+    - Data -> bytes(SI)
 * Thresholds
-  - base만 남기고 다 지움
+  - Base만 남기고 다 지움
 
