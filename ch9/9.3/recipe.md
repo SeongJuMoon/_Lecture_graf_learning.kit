@@ -1,8 +1,8 @@
 ## 대시보드 설정 방법 
-** General ** 
+**General** 
 * 이름: ch9.3.그라파나 변수를 활용해서 원하는 정보만 선택해서 보기
 
-** Variables **
+**Variables**
   - Add variables 
     - **Namespace**
       - Name: namespace
@@ -39,30 +39,30 @@
 ## 패널 그리는 방법 
 
 #1-1 아코디언 메뉴 만들기
-- Title: $namespace namespace summary 
+* Title: $namespace namespace summary 
 
 #1-2-1 </br>
 **[좌측 메뉴/ 쿼리 편집기]** 
-데이터 소스: 프로메테우스
-쿼리: count(kube_replicaset_status_ready_replicas{namespace=\~"$namespace"}) by (namespace)
+* 데이터 소스: 프로메테우스
+* 쿼리: count(kube_replicaset_status_ready_replicas{namespace=\~"$namespace"}) by (namespace)
 **[우측 메뉴 / 패널 옵션]**
-시각화: Stat
-패널 제목: $namespace of total replicaset 
-* Standard Options
-  - No value: 0
+* 시각화: Stat
+* 패널 제목: $namespace of total replicaset 
+  - Standard Options
+    - No value: 0
 
 #1-2-2 </br>
 **[좌측 메뉴/ 쿼리 편집기]** 
-데이터 소스: 프로메테우스
-쿼리: count(kube_deployment_status_condition{namespace=\~"$namespace", status="true"}) by (namespace)
+* 데이터 소스: 프로메테우스
+* 쿼리: count(kube_deployment_status_condition{namespace=\~"$namespace", status="true"}) by (namespace)
 
 **[우측 메뉴 / 패널 옵션]**
-시각화: Time Series
-패널 제목: $namespace active deployment count
+* 시각화: Time Series
+* 패널 제목: $namespace active deployment count
 
 
 #2-1 아코디언 메뉴 만들기
-- Title: $pod pod summary
+* Title: $pod pod summary
 
 #2-2-1 </br>
 **[좌측 메뉴/ 쿼리 편집기]**
