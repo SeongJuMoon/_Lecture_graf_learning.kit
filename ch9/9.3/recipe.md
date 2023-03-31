@@ -88,15 +88,15 @@
   - node
 
 #2-2-2 </br>
-**[우측 메뉴 / 패널 옵션]**
-* 시각화: Time series
-* 패널 제목: $pod container used cpu (rated , 5m)
-
 **[좌측 메뉴/ 쿼리 편집기]**
 * 데이터 소스: 프로메테우스
 * 쿼리: rate(container_cpu_usage_seconds_total{namespace=\~"$namespace", pod=\~"$pod", container=\~"$container"}[5m])
 * 쿼리 옵션
   - Legends: {{pod}}/{{container}}
+
+**[우측 메뉴 / 패널 옵션]**
+* 시각화: Time series
+* 패널 제목: $pod container used cpu (rated , 5m)
 
 #2-2-3 </br>
 **[좌측 메뉴/ 쿼리 편집기]** 
