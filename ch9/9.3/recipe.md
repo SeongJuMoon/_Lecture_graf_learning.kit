@@ -45,6 +45,7 @@
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: count(kube_replicaset_status_ready_replicas{namespace=\~"$namespace"}) by (namespace)
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Stat
 * 패널 제목: $namespace of total replicaset 
@@ -89,6 +90,7 @@
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Time series
 * 패널 제목: $pod container used cpu (rated , 5m)
+
 **[좌측 메뉴/ 쿼리 편집기]**
 * 데이터 소스: 프로메테우스
 * 쿼리: rate(container_cpu_usage_seconds_total{namespace=\~"$namespace", pod=\~"$pod", container=\~"$container"}[5m])
@@ -99,6 +101,7 @@
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리:  sum(container_memory_working_set_bytes{namespace=\~"$namespace", pod=\~"$pod", container=\~"$container"}) by (container)
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Gauge
 * 패널 제목: per $namespace $pod containers memory usage bytes
