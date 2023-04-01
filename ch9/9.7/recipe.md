@@ -32,7 +32,7 @@
 * 시각화: Stat
 * 패널 제목: kube-proxy iptable 규칙 개수 (filter) 
 * Thresholds
-  - Green: Base
+  - Base만 남기고 다 지움
 
 #2-2 <br/>
 **[좌측 메뉴/ 쿼리 편집기]** 
@@ -43,7 +43,7 @@
 * 시각화: Stat
 * 패널 제목: kube-proxy iptable 규칙 개수 (nat) 
 * Thresholds
-  - Green: Base
+  - Base만 남기고 다 지움
 
 #3 <br/>
 **[좌측 메뉴/ 쿼리 편집기]**
