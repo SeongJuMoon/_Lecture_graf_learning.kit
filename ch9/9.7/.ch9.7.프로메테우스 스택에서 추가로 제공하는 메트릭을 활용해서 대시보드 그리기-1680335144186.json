@@ -104,12 +104,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 24,
         "x": 0,
         "y": 0
       },
-      "id": 6,
+      "id": 2,
       "options": {
         "footer": {
           "fields": "",
@@ -151,11 +151,11 @@
               "service": true
             },
             "indexByName": {
-              "Time": 5,
+              "Time": 4,
               "Value": 9,
-              "__name__": 6,
+              "__name__": 5,
               "cluster_version": 2,
-              "endpoint": 4,
+              "endpoint": 6,
               "instance": 3,
               "job": 7,
               "namespace": 0,
@@ -192,12 +192,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 0,
-        "y": 7
+        "y": 8
       },
-      "id": 2,
+      "id": 4,
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -253,12 +253,12 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 8,
         "w": 12,
         "x": 12,
-        "y": 7
+        "y": 8
       },
-      "id": 4,
+      "id": 6,
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -281,7 +281,7 @@
             "uid": "${DS_PROMETHEUS}"
           },
           "editorMode": "code",
-          "expr": "sum(kubeproxy_sync_proxy_rules_iptables_total{table=\"nat\"}) by (instance)\r\n",
+          "expr": "sum(kubeproxy_sync_proxy_rules_iptables_total{table=\"nat\"}) by (instance)",
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
@@ -345,7 +345,32 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "unschedulable"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -383,6 +408,7 @@
       "type": "timeseries"
     }
   ],
+  "refresh": "10s",
   "schemaVersion": 37,
   "style": "dark",
   "tags": [],
@@ -390,13 +416,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
-  "title": "ch9.7.프로메테우스-스택에서 제공하는 새로운 메트릭 활용",
-  "uid": "IHNPu3T4z",
-  "version": 1,
+  "title": "ch9.7.프로메테우스 스택에서 추가로 제공하는 메트릭을 활용해서 대시보드 그리기",
+  "uid": "FCZm-RYVz",
+  "version": 2,
   "weekStart": ""
 }
