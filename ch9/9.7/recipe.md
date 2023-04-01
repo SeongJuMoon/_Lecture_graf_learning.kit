@@ -11,6 +11,7 @@
   - Legend: Auto (no change)
   - Format: Table
   - Type: Instant
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Table
 * 패널 제목: etcd cluster 정보
@@ -26,6 +27,7 @@
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: sum(kubeproxy_sync_proxy_rules_iptables_total{table="filter"}) by (instance)
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Stat
 * 패널 제목: kube-proxy iptable 규칙 개수 (filter) 
@@ -36,13 +38,14 @@
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: sum(kubeproxy_sync_proxy_rules_iptables_total{table="nat"}) by (instance)
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Stat
 * 패널 제목: kube-proxy iptable 규칙 개수 (nat) 
 * Thresholds
   - Green: Base
 
-#3
+#3 <br/>
 **[좌측 메뉴/ 쿼리 편집기]**
 * 데이터 소스: 프로메테우스
 * 쿼리 : sum(scheduler_pending_pods) by (queue)
