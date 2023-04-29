@@ -38,6 +38,7 @@
 **[좌측 메뉴/ 쿼리 편집기]** 
 * 데이터 소스: 프로메테우스
 * 쿼리: sum(rate(node_cpu_seconds_total[$__rate_interval])) by (instance)
+
 **[좌측 메뉴/ 쿼리 편집기 / Query options]**
 * Min interval: 3m
 
