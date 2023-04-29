@@ -11,7 +11,8 @@
  - Mode: Markdown (no change)
  - Content
  ---
- # ${__user.login} 님 안녕하세요.
+
+# ${__user.login} 님 안녕하세요.
 
 지금 접속하신 그라파나는 ${__org.name} 입니다.
 
