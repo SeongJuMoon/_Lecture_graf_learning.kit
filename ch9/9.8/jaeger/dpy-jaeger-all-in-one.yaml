@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jaeger
+  name: jaeger
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jaeger
+  template:
+    metadata:
+      labels:
+        app: jaeger
+    spec:
+      containers:
+      - image: jaegertracing/all-in-one:1.40
+        name: jaeger
+        env:
+        - name: COLLECTOR_OTLP_ENABLED
+          value: "true"
+        ports:
+        - containerPort: 5775
+        - containerPort: 6831
+        - containerPort: 6832
+        - containerPort: 5778
+        - containerPort: 16686
+        - containerPort: 14250
+        - containerPort: 14268
+        - containerPort: 14269
+        - containerPort: 4317
+        - containerPort: 4318
+        - containerPort: 9411
