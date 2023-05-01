@@ -7,7 +7,7 @@ helm install loki-stack edu/loki-stack \
 --namespace monitoring 
 
 echo "2.nginx install via kubectl."
-kubectl apply -f nginx ~/_Lecture_graf_learning.kit/ch9/9.8/nginx
+kubectl apply -f ~/_Lecture_graf_learning.kit/ch9/9.8/nginx
 
 echo "3.jaeger and hotrod install via kubectl."
 kubectl apply -f ~/_Lecture_graf_learning.kit/ch9/9.8/jaeger
