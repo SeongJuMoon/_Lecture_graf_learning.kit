@@ -2,7 +2,7 @@
 
 echo "1. loki uninstall via helm."
 
-helm uninstall loki-stack edu/loki-stack \
+helm uninstall loki-stack \
 --namespace monitoring 
 
 echo "2. nginx delete via kubectl."
