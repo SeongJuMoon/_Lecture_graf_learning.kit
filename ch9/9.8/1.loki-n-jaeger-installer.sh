@@ -11,5 +11,6 @@ kubectl apply -f nginx ~/_Lecture_graf_learning.kit/ch9/9.8/nginx
 
 echo "3.jaeger and hotrod install via kubectl."
 kubectl apply -f ~/_Lecture_graf_learning.kit/ch9/9.8/jaeger
+kubectl apply -f ~/_Lecture_graf_learning.kit/ch9/9.8/example-hotrod-🚗
 
 echo "loki & jaeger datasource install successfully."
