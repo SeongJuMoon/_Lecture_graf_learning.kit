@@ -37,15 +37,15 @@ helm install prometheus edu/prometheus \
 --set server.global.evaluation_interval="15s" \
 --set server.extraFlags[0]="web.enable-lifecycle" \
 --set server.extraFlags[1]="storage.tsdb.no-lockfile" \
---set server.sidecarContainers.stackdriver-agent.image="${SIDECAR_IMAGE_NAME}:${SIDECAR_IMAGE_TAG}" \
---set server.sidecarContainers.stackdriver-agent.imagePullPolicy=Always \
---set server.sidecarContainers.stackdriver-agent.args[0]="--stackdriver.project-id=${GCP_PROJECT}" \
---set server.sidecarContainers.stackdriver-agent.args[1]="--prometheus.wal-directory=${DATA_DIR}/wal" \
---set server.sidecarContainers.stackdriver-agent.args[2]="--stackdriver.kubernetes.location=${GCP_REGION}" \
---set server.sidecarContainers.stackdriver-agent.args[3]="--stackdriver.kubernetes.cluster-name=${KUBE_CLUSTER}" \
---set server.sidecarContainers.stackdriver-agent.ports[0].name=stackdriver-agent \
---set server.sidecarContainers.stackdriver-agent.ports[0].containerPort="9091" \
---set server.sidecarContainers.stackdriver-agent.volumeMounts[0].name=${DATA_VOLUME} \
---set server.sidecarContainers.stackdriver-agent.volumeMounts[0].mountPath=${DATA_DIR} \
+--set server.sidecarContainers.monitoring.image="${SIDECAR_IMAGE_NAME}:${SIDECAR_IMAGE_TAG}" \
+--set server.sidecarContainers.monitoring.imagePullPolicy=Always \
+--set server.sidecarContainers.monitoring.args[0]="--stackdriver.project-id=${GCP_PROJECT}" \
+--set server.sidecarContainers.monitoring.args[1]="--prometheus.wal-directory=${DATA_DIR}/wal" \
+--set server.sidecarContainers.monitoring.args[2]="--stackdriver.kubernetes.location=${GCP_REGION}" \
+--set server.sidecarContainers.monitoring.args[3]="--stackdriver.kubernetes.cluster-name=${KUBE_CLUSTER}" \
+--set server.sidecarContainers.monitoring.ports[0].name=monitoring \
+--set server.sidecarContainers.monitoring.ports[0].containerPort="9091" \
+--set server.sidecarContainers.monitoring.volumeMounts[0].name=${DATA_VOLUME} \
+--set server.sidecarContainers.monitoring.volumeMounts[0].mountPath=${DATA_DIR} \
 --create-namespace \
 -n ${KUBE_NAMESPACE}
