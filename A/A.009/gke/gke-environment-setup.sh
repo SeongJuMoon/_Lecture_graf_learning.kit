@@ -10,14 +10,18 @@ function util::user::readline() {
   echo "$input"
 }
 
-export GCP_PROJECT=$(util::user::readline "GCP PROJECT ID를 입력해주세요.: ")
+export GCP_PROJECT=$(util::user::readline "GCP PROJECT ID를 입력해주세요: ")
 export GCP_REGION=$(util::user::readline "GCP REGION을 입력해주세요.: ")
-export KUBE_CLUSTER=$(util::user::readline "GKE CLUSTER 이름을 입력해주세요.: ")
+export KUBE_CLUSTER=$(util::user::readline "GKE CLUSTER 이름을 입력해주세요: ")
+export CLUSTER_VERSION=$(util::user::readline "ℹ️  현재 사용가능한 클러스터 버전은 https://cloud.google.com/kubernetes-engine/docs/release-notes-nochannel 를 참고하세요
+GKE CLUSTER 이름을 입력해주세요: ")
 export DATA_VOLUME="storage-volume"
 export DATA_DIR="/data"
 export KUBE_NAMESPACE="monitoring"
 export ACCOUNT_NAME="grafana"
 
+echo "Setup permission GKE for labs."
+gcloud services enable container.googleapis.com containerregistry.googleapis.com
 echo "Create GKE cluster for lab."
 
 # gcloud kubernetes
@@ -26,8 +30,8 @@ gcloud container clusters create $KUBE_CLUSTER \
 --zone=${GCP_REGION}-a \
 --no-enable-autorepair \
 --no-enable-autoupgrade \
---cluster-version="1.26.5-gke.1200"
-
+--cluster-version="${CLUSTER_VERSION}" \
+--release-channel=None
 
 echo "[GKE] kubernetes auth."
 gcloud container clusters get-credentials $KUBE_CLUSTER --zone ${GCP_REGION}-a
