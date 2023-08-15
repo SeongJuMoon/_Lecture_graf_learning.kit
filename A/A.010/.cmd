@@ -10,7 +10,6 @@ Treemap => 영역에서 어느 정도 규모를 가지는 지 보여주는 패�
 
 ## 1-3 remove panel plugin and 17900 dashboard
 
-
 # 2
 ## 2-1 deploy standalone redis via redis.yaml
 cat redis.yaml
