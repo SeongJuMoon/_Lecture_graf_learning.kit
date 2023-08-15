@@ -11,10 +11,10 @@ function util::user::readline() {
 }
 
 export GCP_PROJECT=$(util::user::readline "GCP PROJECT ID를 입력해주세요: ")
-export GCP_REGION=$(util::user::readline "GCP REGION을 입력해주세요.: ")
+export GCP_REGION=$(util::user::readline "GCP REGION을 입력해주세요: ")
 export KUBE_CLUSTER=$(util::user::readline "GKE CLUSTER 이름을 입력해주세요: ")
 export CLUSTER_VERSION=$(util::user::readline "ℹ️  현재 사용가능한 클러스터 버전은 https://cloud.google.com/kubernetes-engine/docs/release-notes-nochannel 를 참고하세요
-GKE CLUSTER 이름을 입력해주세요: ")
+GKE CLUSTER 버전을 입력해주세요: ")
 export DATA_VOLUME="storage-volume"
 export DATA_DIR="/data"
 export KUBE_NAMESPACE="monitoring"
