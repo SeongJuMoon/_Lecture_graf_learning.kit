@@ -15,7 +15,7 @@
 **[우측 메뉴 / 패널 옵션 / Tour Steps / 2]**
 * Target: Panel
 * Target Panel Title: 네임스페이스
-* Guided Tour Content: 쿠버네티스 클러스터에 내부 네임스페이스 갯수 요약하여 나타냅니다.
+* Guided Tour Content: 쿠버네티스 클러스터에 내부 네임스페이스 갯수를 요약하여 나타냅니다.
 
 **[우측 메뉴 / 패널 옵션 / Tour Steps / 3]**
 * Target: Panel
