@@ -2,6 +2,7 @@
 
 **[대시보드 설정]**
 * 이름: 1 Kubernetes All-in-one Cluster Monitoring KR(v1.26.0)
+
 **[우측 메뉴 / 패널 옵션]**
 * 시각화: Alert list 
 * 패널 제목: 
