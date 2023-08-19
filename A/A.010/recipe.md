@@ -22,9 +22,9 @@
 * Guided Tour Content: 쿠버네티스 클러스터에 내부 파드 갯수를 요약하여 나타냅니다.
 
 **[우측 메뉴 / 패널 옵션 / Tour Steps / 4]**
-Target: Panel
-Target Panel Title: PVC
-Guided Tour Content: 쿠버네티스 클러스터에 내부 PVC 갯수를 요약하여 나타냅니다.
+* Target: Panel
+* Target Panel Title: PVC
+* Guided Tour Content: 쿠버네티스 클러스터에 내부 PVC 갯수를 요약하여 나타냅니다.
 
 **[우측 메뉴 / 패널 옵션 / Tour Steps / 5]**
 * Target: Panel
