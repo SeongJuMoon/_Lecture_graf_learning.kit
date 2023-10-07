@@ -31,7 +31,7 @@ metadata:
     app: mysql
 spec:
   type: LoadBalancer
-  loadBalancerIP: "192.168.1.57"
+  loadBalancerIP: "192.168.1.58"
   selector:
     app: mysql
   ports:
