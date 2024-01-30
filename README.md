@@ -1,10 +1,7 @@
 ## grafana learning kit / 실습으로 배우는 그라파나
-<준비중>
-
 <a href="https://inf.run/2qXU">
 <img src="https://cdn.inflearn.com/public/courses/329716/cover/2d0d5aa7-bca8-4ba0-ab80-cf4f33b47fef/329716-eng.png" width="400">
 </a>
-
 
 ***
 ## 목차
