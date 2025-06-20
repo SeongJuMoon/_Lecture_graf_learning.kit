@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# init kubernetes 
+# init kubernetes (w/ containerd)
 kubeadm init --token 123456.1234567890123456 --token-ttl 0 \
-             --pod-network-cidr=172.16.0.0/16 --apiserver-advertise-address=$1 \
+             --pod-network-cidr=172.16.0.0/16 --apiserver-advertise-address=192.168.1.10 \
              --cri-socket=unix:///run/containerd/containerd.sock
 
 # config for control-plane node only 
@@ -24,7 +24,7 @@ echo "alias ka='kubectl apply -f'"   >> ~/.bashrc
 echo "alias kd='kubectl delete -f'"  >> ~/.bashrc
 echo 'complete -F __start_kubectl k' >> ~/.bashrc
 
-# git clone graf-code
+# git clone prom-code
 git clone https://github.com/SeongJuMoon/_Lecture_graf_learning.kit.git
 mv /home/vagrant/_Lecture_graf_learning.kit $HOME
 find $HOME/_Lecture_graf_learning.kit -regex ".*\.\(sh\)" -exec chmod 700 {} \;
